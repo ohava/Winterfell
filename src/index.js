@@ -122,7 +122,7 @@ class Winterfell extends React.Component {
 
     return (
       <React.Fragment>
-        {console.log(this.props)}
+       
       <form method={this.props.method}
             encType={this.props.encType}
             action={this.state.action}

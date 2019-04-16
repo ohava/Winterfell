@@ -135,7 +135,6 @@ var Winterfell = (function (_React$Component) {
       return React.createElement(
         React.Fragment,
         null,
-        console.log(this.props),
         React.createElement(
           'form',
           { method: this.props.method,

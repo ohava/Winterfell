@@ -102,41 +102,47 @@ var Question = (function (_React$Component) {
       var labelId = this.props.questionId + '-label';
 
       return React.createElement(
-        'div',
-        { className: this.props.classes.question },
-        !!this.props.question ? React.createElement(
-          'label',
-          { className: this.props.classes.label,
-            id: labelId,
-            htmlFor: this.props.questionId },
-          this.props.question,
-          typeof this.props.renderRequiredAsterisk !== 'undefined' && this.props.input.required ? this.props.renderRequiredAsterisk() : undefined
-        ) : undefined,
-        !!this.props.text ? React.createElement(
-          'p',
-          { className: this.props.classes.questionText },
-          this.props.text
-        ) : undefined,
-        validationErrors,
-        React.createElement(Input, _extends({ name: this.props.questionId,
-          id: this.props.questionId,
-          labelId: labelId,
-          value: value,
-          text: this.props.input.text,
-          options: this.props.input.options,
-          placeholder: this.props.input.placeholder,
-          required: this.props.input.required,
-          classes: this.props.classes,
-          onChange: this.handleInputChange.bind(this, this.props.questionId),
-          onBlur: this.handleInputBlur.bind(this, this.props.questionId),
-          onKeyDown: this.props.onKeyDown
-        }, typeof this.props.input.props === 'object' ? this.props.input.props : {})),
-        !!this.props.postText ? React.createElement(
-          'p',
-          { className: this.props.classes.questionPostText },
-          this.props.postText
-        ) : undefined,
-        conditionalItems
+        React.Fragment,
+        null,
+        console.log(this.props),
+        React.createElement(
+          'div',
+          { className: this.props.classes.question },
+          !!this.props.question ? React.createElement(
+            'label',
+            { className: this.props.classes.label,
+              id: labelId,
+              htmlFor: this.props.questionId },
+            this.props.question,
+            typeof this.props.renderRequiredAsterisk !== 'undefined' && this.props.input.required ? this.props.renderRequiredAsterisk() : undefined
+          ) : undefined,
+          !!this.props.text ? React.createElement(
+            'p',
+            { className: this.props.classes.questionText },
+            this.props.text
+          ) : undefined,
+          validationErrors,
+          React.createElement(Input, _extends({ name: this.props.questionId,
+            pId: this.props.pId,
+            id: this.props.questionId,
+            labelId: labelId,
+            value: value,
+            text: this.props.input.text,
+            options: this.props.input.options,
+            placeholder: this.props.input.placeholder,
+            required: this.props.input.required,
+            classes: this.props.classes,
+            onChange: this.handleInputChange.bind(this, this.props.questionId),
+            onBlur: this.handleInputBlur.bind(this, this.props.questionId),
+            onKeyDown: this.props.onKeyDown
+          }, typeof this.props.input.props === 'object' ? this.props.input.props : {})),
+          !!this.props.postText ? React.createElement(
+            'p',
+            { className: this.props.classes.questionPostText },
+            this.props.postText
+          ) : undefined,
+          conditionalItems
+        )
       );
     }
   }, {
