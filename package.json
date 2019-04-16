@@ -24,10 +24,10 @@
     "questions",
     "react-component"
   ],
-  "author": "Andrew Hathaway <andrew@andrewhathaway.net>",
+  "author": "Ohava Computers <hello@ohava.com>",
   "repository": {
     "type": "git",
-    "url": "git://github.com/andrewhathaway/winterfell.git"
+    "url": "git://github.com/ohava/winterfell.git"
   },
   "license": "MIT",
   "peerDependencies": {
@@ -38,6 +38,7 @@
     "babelify": "^6.3.0",
     "keycodez": "^1.0.0",
     "lodash": "^3.10.1",
+    "react-dom": "^16.8.6",
     "validator": "^4.0.5"
   },
   "devDependencies": {
