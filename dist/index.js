@@ -161,7 +161,8 @@ var Winterfell = (function (_React$Component) {
             onAnswerChange: this.handleAnswerChange.bind(this),
             onPanelBack: this.handleBackButtonClick.bind(this),
             onSwitchPanel: this.handleSwitchPanel.bind(this),
-            onSubmit: this.handleSubmit.bind(this) })
+            onSubmit: this.handleSubmit.bind(this),
+            pId: this.props.pId })
         )
       );
     }
@@ -196,6 +197,7 @@ Winterfell.defaultProps = {
   encType: 'application/x-www-form-urlencoded',
   method: 'POST',
   action: '',
+  pId: '',
   panelId: undefined,
   disableSubmit: false,
   renderError: undefined,

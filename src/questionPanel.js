@@ -183,7 +183,8 @@ class QuestionPanel extends React.Component {
                      validationErrors={this.state.validationErrors}
                      onAnswerChange={this.handleAnswerChange.bind(this)}
                      onQuestionBlur={this.handleQuestionBlur.bind(this)}
-                     onKeyDown={this.handleInputKeyDown.bind(this)} />
+                     onKeyDown={this.handleInputKeyDown.bind(this)} 
+                     pId={this.props.pId} />
       );
     });
 

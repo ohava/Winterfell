@@ -25,7 +25,8 @@ class QuestionSet extends React.Component {
                   validationErrors={this.props.validationErrors}
                   onAnswerChange={this.props.onAnswerChange}
                   onQuestionBlur={this.props.onQuestionBlur}
-                  onKeyDown={this.props.onKeyDown} />
+                  onKeyDown={this.props.onKeyDown}
+                  pId={this.props.pId} />
       );
     });
 
