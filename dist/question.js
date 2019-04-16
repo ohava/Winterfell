@@ -104,7 +104,6 @@ var Question = (function (_React$Component) {
       return React.createElement(
         React.Fragment,
         null,
-        console.log(this.props),
         React.createElement(
           'div',
           { className: this.props.classes.question },

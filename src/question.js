@@ -106,7 +106,7 @@ class Question extends React.Component {
 
     return (
       <React.Fragment>
-        {console.log(this.props)}
+        
       <div className={this.props.classes.question}>
         {!!this.props.question
           ? (
