@@ -121,6 +121,8 @@ class Winterfell extends React.Component {
                           panel => panel.panelId == this.state.currentPanel.panelId);
 
     return (
+      <React.Fragment>
+        {console.log(this.props)}
       <form method={this.props.method}
             encType={this.props.encType}
             action={this.state.action}
@@ -148,6 +150,7 @@ class Winterfell extends React.Component {
                          pId={this.props.pId} />
         </div>
       </form>
+      </React.Fragment>
     );
   }
 

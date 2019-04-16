@@ -133,36 +133,41 @@ var Winterfell = (function (_React$Component) {
       });
 
       return React.createElement(
-        'form',
-        { method: this.props.method,
-          encType: this.props.encType,
-          action: this.state.action,
-          ref: function (ref) {
-            return _this2.formComponent = ref;
-          },
-          className: this.state.schema.classes.form },
+        React.Fragment,
+        null,
+        console.log(this.props),
         React.createElement(
-          'div',
-          { className: this.state.schema.classes.questionPanels },
-          React.createElement(QuestionPanel, { schema: this.state.schema,
-            classes: this.state.schema.classes,
-            panelId: currentPanel.panelId,
-            panelIndex: currentPanel.panelIndex,
-            panelHeader: currentPanel.panelHeader,
-            panelText: currentPanel.panelText,
-            action: currentPanel.action,
-            button: currentPanel.button,
-            backButton: currentPanel.backButton,
-            questionSets: currentPanel.questionSets,
-            questionAnswers: this.state.questionAnswers,
-            panelHistory: this.panelHistory,
-            renderError: this.props.renderError,
-            renderRequiredAsterisk: this.props.renderRequiredAsterisk,
-            onAnswerChange: this.handleAnswerChange.bind(this),
-            onPanelBack: this.handleBackButtonClick.bind(this),
-            onSwitchPanel: this.handleSwitchPanel.bind(this),
-            onSubmit: this.handleSubmit.bind(this),
-            pId: this.props.pId })
+          'form',
+          { method: this.props.method,
+            encType: this.props.encType,
+            action: this.state.action,
+            ref: function (ref) {
+              return _this2.formComponent = ref;
+            },
+            className: this.state.schema.classes.form },
+          React.createElement(
+            'div',
+            { className: this.state.schema.classes.questionPanels },
+            React.createElement(QuestionPanel, { schema: this.state.schema,
+              classes: this.state.schema.classes,
+              panelId: currentPanel.panelId,
+              panelIndex: currentPanel.panelIndex,
+              panelHeader: currentPanel.panelHeader,
+              panelText: currentPanel.panelText,
+              action: currentPanel.action,
+              button: currentPanel.button,
+              backButton: currentPanel.backButton,
+              questionSets: currentPanel.questionSets,
+              questionAnswers: this.state.questionAnswers,
+              panelHistory: this.panelHistory,
+              renderError: this.props.renderError,
+              renderRequiredAsterisk: this.props.renderRequiredAsterisk,
+              onAnswerChange: this.handleAnswerChange.bind(this),
+              onPanelBack: this.handleBackButtonClick.bind(this),
+              onSwitchPanel: this.handleSwitchPanel.bind(this),
+              onSubmit: this.handleSubmit.bind(this),
+              pId: this.props.pId })
+          )
         )
       );
     }
