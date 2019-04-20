@@ -78,7 +78,8 @@ var Question = (function (_React$Component) {
               onAnswerChange: _this.props.onAnswerChange,
               onQuestionBlur: _this.props.onQuestionBlur,
               onKeyDown: _this.props.onKeyDown,
-              pId: _this.props.pId }));
+              pId: _this.props.pId,
+              sObject: _this.props.sObject }));
           })();
         });
       }
@@ -123,6 +124,7 @@ var Question = (function (_React$Component) {
           validationErrors,
           React.createElement(Input, _extends({ name: this.props.questionId,
             pId: this.props.pId,
+            sObject: this.props.sObject,
             id: this.props.questionId,
             labelId: labelId,
             value: value,

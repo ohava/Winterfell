@@ -46,7 +46,9 @@ var QuestionSet = (function (_React$Component) {
           onAnswerChange: _this.props.onAnswerChange,
           onQuestionBlur: _this.props.onQuestionBlur,
           onKeyDown: _this.props.onKeyDown,
-          pId: _this.props.pId });
+          pId: _this.props.pId,
+          sObject: _this.props.sObject
+        });
       });
 
       return React.createElement(

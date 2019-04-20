@@ -199,7 +199,8 @@ var QuestionPanel = (function (_React$Component) {
           onAnswerChange: _this3.handleAnswerChange.bind(_this3),
           onQuestionBlur: _this3.handleQuestionBlur.bind(_this3),
           onKeyDown: _this3.handleInputKeyDown.bind(_this3),
-          pId: _this3.props.pId });
+          pId: _this3.props.pId,
+          sObject: _this3.props.sObject });
       });
 
       return React.createElement(

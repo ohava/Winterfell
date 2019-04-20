@@ -184,7 +184,8 @@ class QuestionPanel extends React.Component {
                      onAnswerChange={this.handleAnswerChange.bind(this)}
                      onQuestionBlur={this.handleQuestionBlur.bind(this)}
                      onKeyDown={this.handleInputKeyDown.bind(this)} 
-                     pId={this.props.pId} />
+                     pId={this.props.pId}
+                     sObject={this.props.sObject} />
       );
     });
 
