@@ -231,13 +231,11 @@ class QuestionPanel extends React.Component {
                         className={this.props.classes.controlButton} />
               )
             : undefined}
-                  {!this.props.button.disabled
-            ? (
+         
                 <Button text="Skip"
                         onClick={this.handleMainButtonClick.bind(this)}
                         className={this.props.classes.controlButton} />
-              )
-            : undefined}
+         
         </div>
       </div>
     );
