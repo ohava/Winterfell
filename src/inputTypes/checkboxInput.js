@@ -46,6 +46,7 @@ class CheckboxInput extends React.Component {
                  required={this.props.required
                              ? 'required'
                              : undefined}
+                 checked
                  onChange={this.handleChange.bind(this)}
                  onBlur={this.props.onBlur.bind(null, (this.state.checked
                                                         ? this.props.value
@@ -60,7 +61,7 @@ class CheckboxInput extends React.Component {
 
 CheckboxInput.defaultProps = {
   text     : '',
-  defaultChecked: false,
+  defaultChecked: true,
   classes  : {},
   name     : '',
   value    : '',
