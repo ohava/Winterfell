@@ -143,7 +143,7 @@ class Question extends React.Component {
           id={this.props.questionId}
           labelId={labelId}
           value={value}
-          defaultChecked={true}
+          defaultChecked={checked}
           text={this.props.input.text}
           options={this.props.input.options}
           placeholder={this.props.input.placeholder}
